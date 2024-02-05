@@ -1,68 +1,49 @@
 
-# Setup Docker Laravel 10 com PHP 8.1
-[Assine a Academy, e Seja VIP!](https://academy.especializati.com.br)
+# Lista de Contato  Laravel 10 - Mysql
+
+
+<img src="img/01.png" alt="mobile" align="center" height="200 px"><br><br>  
+
+  <img src="img/02.png" alt="mobile" align="center" height="200"><br><br>
+
+  <img src="img/03.png" alt="mobile" align="center" height="200"><br><br>
+
+  <img src="img/04.png" alt="mobile" align="center" height="200"><br><br>
+
 
 ### Passo a passo
-Clone Repositório
+
 ```sh
-git clone -b laravel-10-com-php-8.1 https://github.com/especializati/setup-docker-laravel.git app-laravel
+1 - Uma página de índice com uma lista de contatos existentes.
+
+2 - Uma página com formulário para adição de novos contatos.
+
+3 - Uma página para mostrar detalhes de contato.
+
+4 – Permitir a edição de um registro existente
+
+5 – Permitir exclusão de um registro existente
 ```
-```sh
-cd app-laravel
-```
 
 
-Crie o Arquivo .env
-```sh
-cp .env.example .env
-```
 
-
-Atualize as variáveis de ambiente do arquivo .env
+Considerações
 ```dosini
-APP_NAME="Especializa Ti"
-APP_URL=http://localhost:8989
 
-DB_CONNECTION=mysql
-DB_HOST=db
-DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=root
-DB_PASSWORD=root
 
-CACHE_DRIVER=redis
-QUEUE_CONNECTION=redis
-SESSION_DRIVER=redis
+Um contato é uma entidade com 4 campos: ID, Nome, Contato e endereço de e-mail. O nome deve ser uma string de tamanho maior que 5, o contato deve ter 9 dígitos e o e-mail deve ser um e-mail válido.
 
-REDIS_HOST=redis
-REDIS_PASSWORD=null
-REDIS_PORT=6379
+Cada linha na página de índice deve ter um link para editar o contato e um botão para excluí-lo. A exclusão deve realizar uma exclusão suave do registro, usando recursos do Laravel.
+
+A página de detalhes do contato deve mostrar todos os campos do contato, além do link de edição e do botão de exclusão.
+
+O contato e o endereço de e-mail devem ser únicos, dois contatos não podem ter o mesmo.
+
+Quaisquer informações ou dados necessários da estrutura do banco de dados devem ser adicionados usando migrações e/ou sementes.
+
+Sempre use recursos nativos do Laravel quando possível, incluindo rotas, controladores, regras de validação de formulário, exclusões suaves e outros recursos.
+
+
 ```
 
 
-Suba os containers do projeto
-```sh
-docker-compose up -d
-```
-
-
-Acesse o container app
-```sh
-docker-compose exec app bash
-```
-
-
-Instale as dependências do projeto
-```sh
-composer install
-```
-
-
-Gere a key do projeto Laravel
-```sh
-php artisan key:generate
-```
-
-
-Acesse o projeto
-[http://localhost:8989](http://localhost:8989)
