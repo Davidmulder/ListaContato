@@ -2,13 +2,13 @@
 # Lista de Contato  Laravel 10 - Mysql
 
 
-<img src="img/01.png" alt="mobile" align="center" height="200 px"><br><br>  
+<img src="img/01.png" alt="mobile" align="center" style="max-width: 100%;"><br><br>  
 
-  <img src="img/02.png" alt="mobile" align="center" height="200"><br><br>
+  <img src="img/02.png" alt="mobile" align="center" style="max-width: 100%;"><br><br>
 
-  <img src="img/03.png" alt="mobile" align="center" height="200"><br><br>
+  <img src="img/03.png" alt="mobile" align="center" style="max-width: 100%;"><br><br>
 
-  <img src="img/04.png" alt="mobile" align="center" height="200"><br><br>
+  <img src="img/04.png" alt="mobile" align="center" style="max-width: 100%;"><br><br>
 
 
 ### Passo a passo

@@ -27,6 +27,7 @@ class ContatoController extends Controller
 
         return view('contato.create');
     }
+    
 
     public function store(ContatoFormRequest $request) #adicionar usuario
     {

@@ -12,15 +12,17 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
+
 
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
 
 Route::controller(ContatoController::class)->group(function(){
 
-   // Route:: get('/', 'Index')->name('usuario.index');
+    Route:: get('/', 'Index')->name('contato.index');
 
     Route:: get('/contato', 'Index')->name('contato.index');
     Route:: get('/criar','create') ->name('contato.create');

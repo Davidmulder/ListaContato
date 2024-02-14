@@ -22,6 +22,7 @@
 
 
 
+
   <div class="row row-cols-auto">
 <table id="table_id" class="table">
     <thead>
